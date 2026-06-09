@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowRight, Globe, Users, Award, TrendingUp, Sparkles } from 'lucide-react';
+import { ArrowRight, Globe, Users, Award, TrendingUp } from 'lucide-react';
 import { heroSlides } from '@/data/siteData';
 
 const stats = [
@@ -61,31 +61,25 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/70 via-transparent to-brand-dark/20" />
 
       {/* Content */}
-      <div className="relative z-10 h-full flex flex-col">
-        {/* Navbar clearance spacer — top bar (~48px) + nav (~90px) + breathing room */}
-        <div className="shrink-0 h-[140px] sm:h-[150px] lg:h-[160px]" />
-
-        {/* Centered text block — fills remaining space and centers within it */}
-        <div className="flex-1 flex items-center pb-[220px] sm:pb-[240px] md:pb-[260px]">
-          <div className="w-full px-6 sm:px-10 md:px-12 lg:px-16 xl:px-20">
-            <div className="max-w-3xl">
-              <span className="inline-block text-brand-gold font-heading font-semibold text-sm uppercase tracking-[0.3em] mb-4 opacity-0 animate-[fade-in-up_0.8s_ease-out_0.2s_forwards]">
-                {slide.subtitle}
-              </span>
-              <h1 className="font-heading font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white leading-tight mb-6 opacity-0 animate-[fade-in-up_0.8s_ease-out_0.5s_forwards]">
-                {slide.title}
-              </h1>
-              <p className="text-white/80 text-lg md:text-xl leading-relaxed max-w-xl opacity-0 animate-[fade-in-up_0.8s_ease-out_0.8s_forwards]">
-                {slide.description}
-              </p>
-            </div>
+      <div className="relative z-10 h-full flex items-center pb-32 sm:pb-40 md:pb-48">
+        <div className="container-custom">
+          <div className="max-w-3xl">
+            <span className="inline-block text-brand-gold font-heading font-semibold text-sm uppercase tracking-[0.3em] mb-4 opacity-0 animate-[fade-in-up_0.8s_ease-out_0.2s_forwards]">
+              {slide.subtitle}
+            </span>
+            <h1 className="font-heading font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white leading-tight mb-6 opacity-0 animate-[fade-in-up_0.8s_ease-out_0.5s_forwards]">
+              {slide.title}
+            </h1>
+            <p className="text-white/80 text-lg md:text-xl leading-relaxed mb-8 max-w-xl opacity-0 animate-[fade-in-up_0.8s_ease-out_0.8s_forwards]">
+              {slide.description}
+            </p>
           </div>
         </div>
       </div>
 
       {/* Bottom Left Dynamic CTA Panel */}
       <div className="absolute bottom-16 sm:bottom-20 md:bottom-24 left-0 right-0 z-20 pointer-events-none">
-        <div className="w-full px-6 sm:px-10 md:px-12 lg:px-16 xl:px-20">
+        <div className="container-custom">
           <div className="max-w-5xl pointer-events-auto flex flex-col md:flex-row md:items-end justify-between gap-6 md:gap-12">
             
             {/* Left Column: Active Badge & CTA Buttons */}

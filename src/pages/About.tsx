@@ -3,9 +3,16 @@ import { useInView } from 'framer-motion';
 import { FiCheck, FiTarget, FiEye, FiAward, FiShield, FiUsers, FiStar } from 'react-icons/fi';
 import SectionTitle from '@/components/shared/SectionTitle';
 import StatsSection from '@/components/sections/StatsSection';
-import { coreValues, milestones, certifications } from '@/data/siteData';
+import { coreValues, certifications } from '@/data/siteData';
 
 const valueIcons = [FiShield, FiUsers, FiStar];
+
+const milestones = [
+  { year: "2017", title: "Company Founded", description: "Gevas International established in Nairobi, Kenya" },
+  { year: "2019", title: "Regional Expansion", description: "Expanded operations across East Africa" },
+  { year: "2021", title: "Sustainability Initiative", description: "Committed to net-zero carbon by 2035" },
+  { year: "2024", title: "Global Reach", description: "Operating in multiple countries with over 2,400 professionals" },
+];
 
 export default function About() {
   const timelineRef = useRef(null);
@@ -39,12 +46,12 @@ export default function About() {
               <SectionTitle
                 label="Company Overview"
                 title="Global Engineering Excellence"
-                description="For over 25 years, Gevas International has been at the forefront of engineering and construction innovation, delivering landmark projects that define skylines and transform communities."
+                description="Since 2017, Gevas International has been at the forefront of engineering and construction innovation, delivering landmark projects that define skylines and transform communities."
                 centered={false}
               />
               <div className="mt-8 space-y-4">
                 <p className="text-brand-body leading-relaxed">
-                  Founded in 1999, Gevas International began as a specialized civil engineering firm in Nairobi, Kenya. 
+                  Founded in 2017, Gevas International began as a specialized civil engineering firm in Nairobi, Kenya. 
                   Through unwavering commitment to quality, safety, and innovation, we have grown into a global 
                   engineering conglomerate operating across 25 countries with 2,400+ dedicated professionals.
                 </p>

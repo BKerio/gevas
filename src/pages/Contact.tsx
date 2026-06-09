@@ -30,24 +30,6 @@ export default function Contact() {
       phone: '+254 728 932651',
       email: 'info@gevasinternational.co.ke',
     },
-    {
-      city: 'London',
-      address: '25 Canada Square, Canary Wharf, London E14 5LQ',
-      phone: '+44 20 7946 0958',
-      email: 'uk@gevasinternational.com',
-    },
-    {
-      city: 'Dubai',
-      address: 'Emirates Towers, Sheikh Zayed Road, Dubai, UAE',
-      phone: '+971 4 312 6789',
-      email: 'uae@gevasinternational.com',
-    },
-    {
-      city: 'Singapore',
-      address: '1 Raffles Place, #25-00, Singapore 048616',
-      phone: '+65 6123 4567',
-      email: 'apac@gevasinternational.com',
-    },
   ];
 
   return (
@@ -216,7 +198,7 @@ export default function Contact() {
             {/* Office Locations */}
             <div>
               <h2 className="font-heading font-bold text-2xl text-brand-darkgray mb-8">
-                Our Global Offices
+                Our Office
               </h2>
               <div className="space-y-6">
                 {offices.map((office, index) => (

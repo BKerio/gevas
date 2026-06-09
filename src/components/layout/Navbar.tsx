@@ -94,10 +94,12 @@ export default function Navbar() {
     };
   }, [isOpen]);
 
+  /* eslint-disable react-hooks/set-state-in-effect */
   useEffect(() => {
     setIsOpen(false);
     setActiveDropdown(null);
   }, [location.pathname]);
+  /* eslint-enable react-hooks/set-state-in-effect */
 
   const isActive = (href: string) => {
     if (href === '/') return location.pathname === '/';
@@ -119,7 +121,10 @@ export default function Navbar() {
         children: serviceLinks
       };
     }
-    return link;
+    return {
+      ...link,
+      children: undefined
+    };
   });
 
   const desktopNavLinks = navLinksWithChildren.filter((l) => l.label !== 'Contact');

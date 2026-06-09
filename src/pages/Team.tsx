@@ -11,9 +11,10 @@ export default function Team() {
   const gridRef = useRef(null);
   const isInView = useInView(gridRef, { once: true, margin: "-100px" });
 
-  const filtered = activeDept === 'All'
+  const filtered = (activeDept === 'All'
     ? teamMembers
-    : teamMembers.filter((m) => m.department === activeDept);
+    : teamMembers.filter((m) => m.department === activeDept)
+  ).slice(0, 4);
 
   return (
     <>

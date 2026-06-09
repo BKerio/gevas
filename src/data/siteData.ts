@@ -2,7 +2,7 @@ export const companyInfo = {
   name: "Gevas International",
   tagline: "Building Tomorrow's Landmarks",
   description: "Global engineering excellence and construction innovation. Trusted partner for landmark projects across 25+ countries.",
-  founded: 1999,
+  founded: 2017,
   employees: "2,400+",
   projects: "150+",
   countries: 25,
@@ -34,14 +34,6 @@ export const navLinks = [
 ];
 
 export const heroSlides = [
-  {
-    image: "/images/hero-1.jpg",
-    title: "25 Years of Excellence",
-    subtitle: "in Construction & Engineering",
-    description: "From concept to completion, we deliver landmark projects that shape skylines and transform communities worldwide.",
-    cta1: "Our Projects",
-    cta2: "Get a Quote",
-  },
   {
     image: "/images/hero-2.jpg",
     title: "Global Engineering Solutions",
@@ -393,7 +385,7 @@ export const teamMembers = [
     name: "Gevas Korir",
     title: "Chief Executive Officer",
     department: "Executive",
-    bio: "Founder and CEO with over 30 years of experience in international construction. Alexander established Gevas International in 1999 with a vision to deliver world-class engineering solutions across the globe.",
+    bio: "Founder and CEO with over 30 years of experience in international construction. Alexander established Gevas International in 2017 with a vision to deliver world-class engineering solutions across the globe.",
     education: "MSc Civil Engineering, MIT",
     image: "/images/team-1.jpg",
   },
@@ -576,7 +568,7 @@ export const faqCategories = [
       },
       {
         q: "How long has Gevas International been in business?",
-        a: "Gevas International was founded in 1999 and has over 25 years of experience delivering landmark projects across 25 countries. We have grown from a regional construction firm to a global engineering conglomerate with 2,400+ employees worldwide.",
+        a: "Gevas International was founded in 2017 and has over 9 years of experience delivering landmark projects across 25 countries. We have grown from a regional construction firm to a global engineering conglomerate with 2,400+ employees worldwide.",
       },
       {
         q: "What geographic regions does Gevas International operate in?",
@@ -692,7 +684,7 @@ export const stats = [
   { value: 150, suffix: "+", label: "Projects Completed" },
   { value: 25, suffix: "", label: "Countries" },
   { value: 2400, suffix: "+", label: "Team Members" },
-  { value: 25, suffix: "+", label: "Years of Excellence" },
+  { value: 9, suffix: "+", label: "Years of Excellence" },
 ];
 
 export const clientLogos = [
@@ -709,15 +701,10 @@ export const clientLogos = [
 ];
 
 export const milestones = [
-  { year: "1999", title: "Company Founded", description: "Gevas International established in Nairobi, Kenya" },
-  { year: "2003", title: "First International Project", description: "Awarded landmark bridge project in Canada" },
-  { year: "2007", title: "European Expansion", description: "Opened London regional headquarters" },
-  { year: "2010", title: "1,000 Employee Milestone", description: "Grew to over 1,000 team members globally" },
-  { year: "2013", title: "Middle East Entry", description: "Launched operations in Dubai, UAE" },
-  { year: "2016", title: "$1B Revenue Mark", description: "Achieved annual revenue exceeding $1 billion" },
-  { year: "2019", title: "20th Anniversary", description: "Celebrated 20 years of engineering excellence" },
+  { year: "2017", title: "Company Founded", description: "Gevas International established in Nairobi, Kenya" },
+  { year: "2019", title: "Regional Expansion", description: "Expanded operations across East Africa" },
   { year: "2021", title: "Sustainability Initiative", description: "Committed to net-zero carbon by 2035" },
-  { year: "2024", title: "25th Anniversary", description: "25 years of building tomorrow's landmarks" },
+  { year: "2024", title: "Global Reach", description: "Operating in multiple countries with over 2,400 professionals" },
 ];
 
 export const certifications = [

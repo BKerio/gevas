@@ -3,16 +3,9 @@ import { useInView } from 'framer-motion';
 import { FiCheck, FiTarget, FiEye, FiAward, FiShield, FiUsers, FiStar } from 'react-icons/fi';
 import SectionTitle from '@/components/shared/SectionTitle';
 import StatsSection from '@/components/sections/StatsSection';
-import { coreValues, certifications } from '@/data/siteData';
+import { coreValues, milestones, certifications } from '@/data/siteData';
 
 const valueIcons = [FiShield, FiUsers, FiStar];
-
-const milestones = [
-  { year: "2017", title: "Company Founded", description: "Gevas International established in Nairobi, Kenya" },
-  { year: "2019", title: "Regional Expansion", description: "Expanded operations across East Africa" },
-  { year: "2021", title: "Sustainability Initiative", description: "Committed to net-zero carbon by 2035" },
-  { year: "2024", title: "Global Reach", description: "Operating in multiple countries with over 2,400 professionals" },
-];
 
 export default function About() {
   const timelineRef = useRef(null);

@@ -24,9 +24,9 @@ const stats = [
     icon: <Users className="w-5 h-5 text-brand-gold" />
   },
   {
-    value: "25 Yrs",
+    value: "9 Yrs",
     label: "of Excellence",
-    desc: "Shaping skylines since 1999",
+    desc: "Shaping skylines since 2017",
     icon: <Award className="w-5 h-5 text-brand-gold" />
   }
 ];
@@ -63,17 +63,7 @@ export default function HeroSection() {
       {/* Content */}
       <div className="relative z-10 h-full flex items-center pb-32 sm:pb-40 md:pb-48">
         <div className="container-custom">
-          <div className="max-w-3xl">
-            <span className="inline-block text-brand-gold font-heading font-semibold text-sm uppercase tracking-[0.3em] mb-4 opacity-0 animate-[fade-in-up_0.8s_ease-out_0.2s_forwards]">
-              {slide.subtitle}
-            </span>
-            <h1 className="font-heading font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white leading-tight mb-6 opacity-0 animate-[fade-in-up_0.8s_ease-out_0.5s_forwards]">
-              {slide.title}
-            </h1>
-            <p className="text-white/80 text-lg md:text-xl leading-relaxed mb-8 max-w-xl opacity-0 animate-[fade-in-up_0.8s_ease-out_0.8s_forwards]">
-              {slide.description}
-            </p>
-          </div>
+         
         </div>
       </div>
 

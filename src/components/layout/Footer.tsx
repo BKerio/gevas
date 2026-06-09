@@ -75,7 +75,7 @@ export default function Footer() {
               </div>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
-              Global engineering excellence and construction innovation since 1999. 
+              Global engineering excellence and construction innovation since 2017. 
               Building tomorrow's landmarks across 25 countries.
             </p>
             <div className="flex gap-3">

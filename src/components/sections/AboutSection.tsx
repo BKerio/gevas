@@ -25,12 +25,12 @@ export default function AboutSection() {
             <SectionTitle
               label="About Us"
               title="We Deliver Landmark Projects"
-              description="We are a global engineering and construction leader with over 25 years of experience delivering landmark projects that shape skylines and transform communities worldwide."
+              description="We are a global engineering and construction leader with experience delivering landmark projects since 2017 that shape skylines and transform communities worldwide."
               centered={false}
               className="mb-8"
             />
             <p className="text-brand-body leading-relaxed mb-6">
-              From our founding in 1999, Gevas International has grown from a regional construction firm 
+              From our founding in 2017, Gevas International has grown from a regional construction firm 
               into a global engineering conglomerate with 2,400+ team members across 25 countries. 
               Our integrated approach combines architectural excellence with engineering precision, 
               utilizing cutting-edge technology and sustainable practices.
@@ -84,7 +84,7 @@ export default function AboutSection() {
                   transition: 'all 0.6s ease-out 0.8s',
                 }}
               >
-                <div className="font-heading font-bold text-4xl text-brand-gold">25+</div>
+                <div className="font-heading font-bold text-4xl text-brand-gold">9+</div>
                 <div className="text-sm text-white/80 uppercase tracking-wider">Years Experience</div>
               </div>
             </div>

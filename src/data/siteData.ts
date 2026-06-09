@@ -390,7 +390,7 @@ export const testimonials = [
 export const teamMembers = [
   {
     id: 1,
-    name: "Alexander Gevas",
+    name: "Gevas Korir",
     title: "Chief Executive Officer",
     department: "Executive",
     bio: "Founder and CEO with over 30 years of experience in international construction. Alexander established Gevas International in 1999 with a vision to deliver world-class engineering solutions across the globe.",
@@ -399,7 +399,7 @@ export const teamMembers = [
   },
   {
     id: 2,
-    name: "Victoria Sterling",
+    name: "Victoria Mutai",
     title: "Chief Operations Officer",
     department: "Executive",
     bio: "Victoria oversees all operational aspects of Gevas International's global projects. Her strategic leadership has been instrumental in expanding the company's footprint to 25 countries.",
@@ -408,7 +408,7 @@ export const teamMembers = [
   },
   {
     id: 3,
-    name: "Dr. James Thornton",
+    name: "Dr. James Kamaus",
     title: "Chief Technical Officer",
     department: "Engineering",
     bio: "A renowned structural engineer, Dr. Thornton leads Gevas International's technical innovation and R&D initiatives. He has published over 50 papers on advanced construction methodologies.",

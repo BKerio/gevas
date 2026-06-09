@@ -697,11 +697,15 @@ export const stats = [
 
 export const clientLogos = [
   "KeNHA",
-  "Kigali Estates",
   "KenGen",
-  "TANROADS",
-  "Coastline Developers",
-  "NWSC Uganda",
+  "KURA",
+  "KeRRA",
+  "Kenya Power",
+  "KETRACO",
+  "Nairobi Water",
+  "Kenya Pipeline",
+  "Kenya Railways",
+  "Kisumu Water",
 ];
 
 export const milestones = [

@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&family=Space+Grotesk:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 13%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 13%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 13%;
+    --primary: 207 82% 24%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 13%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 33%;
+    --accent: 43 78% 47%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 207 82% 24%;
+    --radius: 0.5rem;
+  }
+
+  body {
+    @apply bg-white text-brand-darkgray font-body antialiased;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-bold tracking-tight;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-brand-gold text-white px-8 py-3.5 font-heading font-semibold text-sm uppercase tracking-wider
+           transition-all duration-300 hover:bg-[#c09015] inline-block text-center;
+  }
+
+  .btn-outline {
+    @apply border-2 border-white text-white px-8 py-3.5 font-heading font-semibold text-sm uppercase tracking-wider
+           transition-all duration-300 hover:bg-white hover:text-brand-dark inline-block text-center;
+  }
+
+  .btn-outline-primary {
+    @apply border-2 border-brand-blue text-brand-blue px-8 py-3.5 font-heading font-semibold text-sm uppercase tracking-wider
+           transition-all duration-300 hover:bg-brand-blue hover:text-white inline-block text-center;
+  }
+
+  .section-padding {
+    @apply py-20 md:py-28;
+  }
+
+  .container-custom {
+    @apply max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-brand-blue to-brand-gold bg-clip-text text-transparent;
+  }
+}
+
+@layer utilities {
+  .clip-cross {
+    clip-path: polygon(20% 0%, 80% 0%, 80% 100%, 20% 100%);
+  }
+  .clip-full {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.swiper-pagination-bullet {
+  @apply w-3 h-3 bg-white/50 opacity-100;
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-brand-gold;
+}

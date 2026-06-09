@@ -408,7 +408,7 @@ export const teamMembers = [
   },
   {
     id: 3,
-    name: "Dr. James Kamaus",
+    name: "Dr. James Kamau",
     title: "Chief Technical Officer",
     department: "Engineering",
     bio: "A renowned structural engineer, Dr. Thornton leads Gevas International's technical innovation and R&D initiatives. He has published over 50 papers on advanced construction methodologies.",

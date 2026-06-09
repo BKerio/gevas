@@ -57,15 +57,19 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div>
-            <Link to="/" className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 bg-brand-blue flex items-center justify-center font-heading font-bold text-xl text-white">
-                G
+            <Link to="/" className="flex items-center gap-3 mb-6 group">
+              <div className="w-11 h-11 rounded-xl bg-white/10 border border-white/20 flex items-center justify-center p-1.5 transition-all duration-500 group-hover:bg-brand-blue">
+                <img
+                  src="/images/logo.png"
+                  alt="Gevas Logo"
+                  className="w-full h-full object-contain transition-transform duration-700 ease-in-out group-hover:rotate-[360deg] group-hover:scale-110"
+                />
               </div>
               <div className="flex flex-col">
-                <span className="font-heading font-bold text-lg leading-tight text-white">
+                <span className="font-heading font-bold text-lg leading-tight text-white transition-all duration-300 group-hover:text-brand-gold">
                   GEVAS
                 </span>
-                <span className="text-[10px] font-heading font-semibold tracking-[0.2em] uppercase leading-tight text-brand-gold">
+                <span className="text-[10px] font-heading font-semibold tracking-[0.2em] uppercase leading-tight text-brand-gold transition-all duration-300 group-hover:text-white">
                   International
                 </span>
               </div>

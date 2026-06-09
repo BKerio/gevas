@@ -65,6 +65,17 @@
   .text-gradient {
     @apply bg-gradient-to-r from-brand-blue to-brand-gold bg-clip-text text-transparent;
   }
+  
+  .link-hover-line {
+    @apply relative;
+  }
+  .link-hover-line::after {
+    content: '';
+    @apply absolute w-0 h-[2px] bottom-[-2px] left-0 bg-golden transition-all duration-300;
+  }
+  .link-hover-line:hover::after {
+    @apply w-full;
+  }
 }
 
 @layer utilities {
@@ -99,3 +110,17 @@ html.lenis, html.lenis body {
 .swiper-pagination-bullet-active {
   @apply bg-brand-gold;
 }
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 2.5s infinite;
+}
+

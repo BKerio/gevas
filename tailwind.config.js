@@ -47,6 +47,8 @@ module.exports = {
           white: "#FFFFFF",
           darkgray: "#222222",
         },
+        golden: "#FEC63F",
+        charcoal: "#151515",
       },
       fontFamily: {
         heading: ['Montserrat', 'sans-serif'],
